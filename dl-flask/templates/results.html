@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block sub_content %}
+
+<div class="container text-center">
+<h1>{{result['result']}}</h1>
+</div>
+<hr>
+<div class="container">
+<p> State: {{result['state'] | safe}}</p>
+</div>
+<hr>
+<div class="container text-left">
+<p> Accuracy: {{result['acuracy']}}</p>
+</div>
+
+{% endblock %}    

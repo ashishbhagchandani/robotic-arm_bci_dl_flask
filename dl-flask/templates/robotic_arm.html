@@ -1,0 +1,43 @@
+{%extends "layout.html" %}
+{% block sub_content %}
+
+<img src="{{url_for('static', filename='1.jpg')}}" align="left" />
+<img src="{{url_for('static', filename='5.jpg')}}" align="right" />
+<div class="w3-container"> 
+    <div class="row">
+        
+        <div class="col-sm"
+          <strong><h3>Right side</h3></strong>
+          <p>F1,F2: Can be used to hold something<br/>
+        M1: Servo motor used to control motions of F1 and F2<br/>
+        P: Gives grip to F1 and F2<br/>
+        W: It can rotate and gives hold to P<br/>
+        M2: Servo motor used to control motions of W<br/>
+        FA: Acts as connection between E and W<br/>
+        S1: It support FA in robotic arm<br/>
+        E: Acts as a joint between A and FA<br/>
+        </p>
+        </div>
+          
+         <div class="col-sm"
+          <strong><h3> Left Side </h3></strong>
+            <p>S2: It supports A
+            A: Performs up-down motion, acts as a connection between S and E<br/>
+            SC: Servo Controller, control all the servo motors<br/>
+            M3: Servo motor used to perform motion of A from the front facing right side<br/>
+        </p>
+        </div>
+         
+         <div class="col-sm"
+          <strong><h3>Down Side</h3></strong>
+          <p>B: Fix base of robotic arm <br/>
+            S: Performs rotatory motion of whole robotic-arm<br/>
+            M5: Perform motion of S<br/>
+            M4: Servo motor used to perform motion of A from the front facing left side<br/>
+        </p>
+        </div> 
+        
+  </div>
+</div>  
+
+{% endblock %}   

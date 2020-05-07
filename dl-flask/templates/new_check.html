@@ -1,0 +1,27 @@
+{%extends "layout.html" %}
+
+{% block sub_content %}
+<div class="text-center">
+  <h1> New Checkup </h1>
+
+    <form action="{{ url_for('new_check')}}" class="form-horizontal" method="POST">
+      <div class="form-group" align="left">
+        <label class="control-label col-sm-2">Date</label>
+        <div class="col-sm-5">
+          <input type="date" name="date"/>
+        </div>
+      </div>
+      
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10" align="left">
+            <button type="Submit" >Check your current brain state </button>
+          </div>
+        </div>
+    </form>
+    <br>
+    <br>
+      
+    {{ state }}</br>
+    {{ accuracy }}
+
+{% endblock %}    

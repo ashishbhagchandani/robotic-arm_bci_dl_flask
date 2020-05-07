@@ -1,0 +1,31 @@
+{%extends "layout.html" %}
+{% block content %}
+<img src="{{url_for('static', filename='4.jpg')}}" align="left" />
+<img src="{{url_for('static', filename='8.jpg')}}" align="right" />
+{% block sub_content %}
+<div class="w3-container"> 
+    <div class="row">
+        
+        <div class="col-sm"
+          <strong><h3>Input Layer</h3></strong>
+          <p>PQ: Poor Quality</br>
+             A: Attention</br>
+             M: Meditation</br> 
+        </p>
+        </div>
+        
+        <div class="col-sm"
+          <strong><h3>Output Layer</h3></strong>
+          <p>Case 1:Attention with no calmness</br>
+             Case 2: No attention with calmness</br>
+             Case 3: Attention with no calmness</br>
+             Case 4: No attention with no calmness</br>
+             Case 5: Poor Quality</br>  
+        </p>
+        </div>
+     </div>
+</div>        
+
+
+{% endblock %}   
+{% endblock %}
